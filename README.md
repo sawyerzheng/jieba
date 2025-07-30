@@ -29,6 +29,10 @@ jieba
 * 通过 `import jieba` 来引用
 * 如果需要使用paddle模式下的分词和词性标注功能，请先安装paddlepaddle-tiny，`pip install paddlepaddle-tiny==1.6.1`。
 
+通过 `uvx` 免安装调用
+
+`uvx --from git+https://github.com/sawyerzheng/jieba.git@feat-add-console-entry-point jieba`
+
 算法
 ========
 * 基于前缀词典实现高效的词图扫描，生成句子中汉字所有可能成词情况所构成的有向无环图 (DAG)
